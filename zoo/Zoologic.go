@@ -1,5 +1,7 @@
 package zoo
 
-import "zoologic/data"
+import (
+	"zoologic/data"
+)
 
 var zoologic = data.Zoologic
