@@ -20,4 +20,12 @@ func main() {
 	// 5. Implemente a função CountAnimals
 	// resultCountAnimals := zoo.CountAnimals(&zoo.Animal{Specie: "bears", Sex: "male" })
 	// fmt.Println(resultCountAnimals)
+
+	// 6. Implemente a função calculateEntry
+		// CountEntrants
+	// resultCountEntrants := zoo.CountEntrants(data)
+	// fmt.Println(resultCountEntrants)
+		// CalculateEntry
+	// resultsCalculateEntry := zoo.CalculateEntry(data)
+	// fmt.Println(resultsCalculateEntry)
 }
