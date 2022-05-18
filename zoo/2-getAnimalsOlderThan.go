@@ -5,6 +5,7 @@ import (
 	"zoologic/data"
 )
 
+//Esta função, a partir do nome de uma espécie e uma idade mínima, verifica se todos os animais daquela espécie possuem a idade mínima especificada.
 func GetAnimalsOlderThan(animal string, age int) bool {
 	haveTheMinimumAge := true
 
@@ -19,7 +20,7 @@ func GetAnimalsOlderThan(animal string, age int) bool {
 		}
 	}
 
-	// Verifica se todos os animais daquela especie tem a idade minima "age frun prop"
+	// Verifica se todos os animais daquela especie tem a idade minima "age func prop"
 	for _, eachAnimal := range SPECIE.Residents {
 		if eachAnimal.Age < age {
 			haveTheMinimumAge = false

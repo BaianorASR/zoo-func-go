@@ -4,7 +4,7 @@ import (
 	"zoologic/data"
 )
 
-// GetSpeciesByIds retorna um array filtrado com as Species que possuem o ID correspodente
+// GetSpeciesByIds é responsável pela busca das espécies de animais por id. Ela retorna um array contendo as espécies referentes aos ids passados como parâmetro, podendo receber um ou mais ids.
 func GetSpeciesByIds(ids ...string) []data.Species {
 	array := make([]data.Species, 0, len(ids))
 
