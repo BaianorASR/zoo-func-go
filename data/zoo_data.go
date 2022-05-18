@@ -412,8 +412,3 @@ var Zoologic = ZoologicStruct{
 		Child:  20.99,
 	},
 }
-
-// func Data() {
-
-// 	fmt.Println(oi)
-// }

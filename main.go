@@ -10,10 +10,14 @@ func main() {
 	// fmt.Println(resultGetAnimalsOlderThan)
 
 	// 3. Implemente a função GetEmployeeByName
-	// resultGetAnimalsOlderThan := zoo.GetEmployeeByName("Emery")
-	// fmt.Println(resultGetAnimalsOlderThan)
+	// resultGetEmployeeByName := zoo.GetEmployeeByName("Emery")
+	// fmt.Println(resultGetEmployeeByName)
 
 	// 4. Implemente a função GetRelatedEmployees
-	// resultGetAnimalsOlderThan := zoo.GetRelatedEmployees("BAIANOR")
-	// fmt.Println(resultGetAnimalsOlderThan)
+	// resultGetRelatedEmployees := zoo.GetRelatedEmployees("BAIANOR")
+	// fmt.Println(resultGetRelatedEmployees)
+
+	// 5. Implemente a função CountAnimals
+	// resultCountAnimals := zoo.CountAnimals(&zoo.Animal{Specie: "bears", Sex: "male" })
+	// fmt.Println(resultCountAnimals)
 }
