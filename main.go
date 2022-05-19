@@ -28,4 +28,8 @@ func main() {
 		// CalculateEntry
 	// resultsCalculateEntry := zoo.CalculateEntry(data)
 	// fmt.Println(resultsCalculateEntry)
+
+	// 9. Implemente a função GetOldestFromFirstSpecies
+	// resultsGetOldestFromFirstSpecies := zoo.GetOldestFromFirstSpecies("c1f50212-35a6-4ecd-8223-f835538526c2")
+	// fmt.Println(resultsGetOldestFromFirstSpecies)
 }
