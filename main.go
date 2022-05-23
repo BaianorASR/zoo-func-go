@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"zoologic/zoo"
-)
-
 func main() {
 	// 1. Implemente a função GetSpeciesByIds
 	// resultsGetSpeciesByIds := zoo.GetSpeciesByIds("ef3778eb-2844-4c7c-b66c-f432073e1c6b", "0938aa23-f153-4937-9f88-4858b24d6bce")
@@ -27,16 +22,16 @@ func main() {
 	// fmt.Println(resultCountAnimals)
 
 	// 6. Implemente a função calculateEntry
-		// CountEntrants
+	// CountEntrants
 	// resultCountEntrants := zoo.CountEntrants(data)
 	// fmt.Println(resultCountEntrants)
-		// CalculateEntry
+	// CalculateEntry
 	// resultsCalculateEntry := zoo.CalculateEntry(data)
 	// fmt.Println(resultsCalculateEntry)
 
 	// 8. Implemente a função GetSchedule
-	resultsGetSchedule := zoo.GetSchedule("")
-	fmt.Println(resultsGetSchedule)
+	// resultsGetSchedule := zoo.GetSchedule("ADSON")
+	// fmt.Println(resultsGetSchedule)
 
 	// 9. Implemente a função GetOldestFromFirstSpecies
 	// resultsGetOldestFromFirstSpecies := zoo.GetOldestFromFirstSpecies("c1f50212-35a6-4ecd-8223-f835538526c2")
