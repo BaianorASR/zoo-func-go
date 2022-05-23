@@ -4,4 +4,4 @@ import (
 	"zoologic/data"
 )
 
-var zoologic = data.Zoologic
+var zoologic data.ZoologicStruct = data.Zoologic

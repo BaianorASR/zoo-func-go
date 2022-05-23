@@ -1,15 +1,17 @@
 package data
 
-const lionId string = "0938aa23-f153-4937-9f88-4858b24d6bce"
-const ottersId string = "533bebf3-6bbe-41d8-9cdf-46f7d13b62ae"
-const elephantsId string = "bb2a76d8-5fe3-4d03-84b7-dba9cfc048b5"
-const snakesId string = "78460a91-f4da-4dea-a469-86fd2b8ccc84"
-const frogsId string = "89be95b3-47e4-4c5b-b687-1fabf2afa274"
-const bearsId string = "baa6e93a-f295-44e7-8f70-2bcdc6f6948d"
-const tigersId string = "e8481c1d-42ea-4610-8e11-1752cfc05a46"
-const stephanieId string = "9e7d4524-363c-416a-8759-8aa7e50c0992"
-const olaId string = "fdb2543b-5662-46a7-badc-93d960fdc0a8"
-const burlId string = "0e7b460e-acf4-4e17-bcb3-ee472265db83"
+const  (
+	lionId string = "0938aa23-f153-4937-9f88-4858b24d6bce"
+	ottersId string = "533bebf3-6bbe-41d8-9cdf-46f7d13b62ae"
+	elephantsId string = "bb2a76d8-5fe3-4d03-84b7-dba9cfc048b5"
+	snakesId string = "78460a91-f4da-4dea-a469-86fd2b8ccc84"
+	frogsId string = "89be95b3-47e4-4c5b-b687-1fabf2afa274"
+	bearsId string = "baa6e93a-f295-44e7-8f70-2bcdc6f6948d"
+	tigersId string = "e8481c1d-42ea-4610-8e11-1752cfc05a46"
+	stephanieId string = "9e7d4524-363c-416a-8759-8aa7e50c0992"
+	olaId string = "fdb2543b-5662-46a7-badc-93d960fdc0a8"
+	burlId string = "0e7b460e-acf4-4e17-bcb3-ee472265db83"
+)
 
 type ZoologicStruct struct {
 	Species   []Species   `json:"species"`
@@ -37,43 +39,14 @@ type Employees struct {
 	Managers       []string `json:"managers"`
 	ResponsibleFor []string `json:"responsibleFor"`
 }
-type Tuesday struct {
+
+type Day struct {
 	Open  int `json:"open"`
 	Close int `json:"close"`
 }
-type Wednesday struct {
-	Open  int `json:"open"`
-	Close int `json:"close"`
-}
-type Thursday struct {
-	Open  int `json:"open"`
-	Close int `json:"close"`
-}
-type Friday struct {
-	Open  int `json:"open"`
-	Close int `json:"close"`
-}
-type Saturday struct {
-	Open  int `json:"open"`
-	Close int `json:"close"`
-}
-type Sunday struct {
-	Open  int `json:"open"`
-	Close int `json:"close"`
-}
-type Monday struct {
-	Open  int `json:"open"`
-	Close int `json:"close"`
-}
-type Hours struct {
-	Tuesday   Tuesday   `json:"Tuesday"`
-	Wednesday Wednesday `json:"Wednesday"`
-	Thursday  Thursday  `json:"Thursday"`
-	Friday    Friday    `json:"Friday"`
-	Saturday  Saturday  `json:"Saturday"`
-	Sunday    Sunday    `json:"Sunday"`
-	Monday    Monday    `json:"Monday"`
-}
+
+type Hours map[string]Day
+
 type Prices struct {
 	Adult  float64 `json:"adult"`
 	Senior float64 `json:"senior"`
@@ -398,13 +371,13 @@ var Zoologic = ZoologicStruct{
 		},
 	},
 	Hours: Hours{
-		Tuesday:   Tuesday{Open: 8, Close: 6},
-		Wednesday: Wednesday{Open: 8, Close: 6},
-		Thursday:  Thursday{Open: 10, Close: 8},
-		Friday:    Friday{Open: 10, Close: 8},
-		Saturday:  Saturday{Open: 8, Close: 10},
-		Sunday:    Sunday{Open: 8, Close: 8},
-		Monday:    Monday{Open: 0, Close: 0},
+		"tuesday":   Day{Open: 8, Close: 6},
+		"wednesday": Day{Open: 8, Close: 6},
+		"thursday":  Day{Open: 10, Close: 8},
+		"friday":    Day{Open: 10, Close: 8},
+		"saturday":  Day{Open: 8, Close: 10},
+		"sunday":    Day{Open: 8, Close: 8},
+		"monday":    Day{Open: 0, Close: 0},
 	},
 	Prices: Prices{
 		Adult:  49.99,
